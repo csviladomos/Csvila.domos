@@ -1,0 +1,23 @@
+p{
+    color: indigo;
+
+}
+body{
+    background-color: aqua;
+}
+
+.btn-5::after, .btn-5::before{
+    border: 3px solid rgb(70, 6, 219);
+    content: "";
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+a {
+    font-size: 1cm;
+}
