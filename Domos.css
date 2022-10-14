@@ -7,7 +7,7 @@ body { background-color: rgb(76, 11, 141);
 
 
 .buttons{
-  display: block;
+  display: grid;
   flex-direction: row;
   text-align: center;
 }
@@ -16,13 +16,13 @@ body { background-color: rgb(76, 11, 141);
   padding: 20px 50px;
   font-size: 1.25rem;
   position: relative;
-  margin: 32px;
+  margin: 30px;
 }
 
 .btn-1{
   background: rgb(9, 9, 9);
   color: rgb(141, 245, 232);
-  border-radius: 30px;
+  border-radius: 10px;
   transition: transform 0.3s ease;
 }
 .btn-1::after, .btn-1::before{
@@ -31,8 +31,8 @@ body { background-color: rgb(76, 11, 141);
   opacity: 0.3;
   background: rgb(9, 9, 9);
   border-radius: inherit;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   left: 0;
   bottom: 0;
   z-index: -1;
@@ -85,66 +85,7 @@ body { background-color: rgb(76, 11, 141);
 
 
 
-.btn-3{
-  background: rgb(9, 9, 9);
-  color: rgb(141, 245, 232);
-  border-radius: 30px;
-  transition: transform 0.3s ease;
-}
-.btn-3::after, .btn-1::before{
-  content:"";
-  position: absolute;
-  opacity: 0.3;
-  background: rgb(9, 9, 9);
-  border-radius: inherit;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  transition: transform 0.3s ease;
-}
-.btn-3:hover{
-  transform: translate(-12px, -12px)
-}
-.btn-3:hover::after{
-  transform: translate( 6px, 6px)
-}
-.btn-3:hover::before{
-  transform: translate( 12px, 12px)
-}
 
-
-
-
-.btn-4{
-  background: rgb(9, 9, 9);
-  color: rgb(141, 245, 232);
-  border-radius: 30px;
-  transition: transform 0.3s ease;
-}
-.btn-4::after, .btn-1::before{
-  content:"";
-  position: inherit;
-  opacity: 0.3;
-  background: rgb(9, 9, 9);
-  border-radius: inherit;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  transition: transform 0.3s ease;
-}
-.btn-4:hover{
-  transform: translate(-12px, -12px)
-}
-.btn-4:hover::after{
-  transform: translate( 6px, 6px)
-}
-.btn-4:hover::before{
-  transform: translate( 12px, 12px)
-}
 
 
 
